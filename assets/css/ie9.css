@@ -7,7 +7,6 @@
 /* Basic */
 
 	body {
-		background-image: url("../../images/bg.jpg");
+		background-image: url("../images/gallery/bg.jpg");
 		background-size: cover;
-		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
 	}
