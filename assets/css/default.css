@@ -573,10 +573,6 @@ select {
 
 }
 
-/* select { padding: 0;
-   width: 220px;
-   } */
-
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -585,15 +581,17 @@ textarea:focus {
 	background-color: #3d4145;
 }
 
-textarea { min-height: 220px; }
+textarea { 
+   min-height: 220px; 
+}
 
-label,
-legend {
+label, legend {
    font: 16px/24px 'opensans-bold', sans-serif;
 	margin: 12px 0;
    color: #3d4145;
    display: block;
 }
+
 label span,
 legend span {
 	color: #8B9798;

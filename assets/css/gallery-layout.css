@@ -1,0 +1,124 @@
+/*
+=====================================================================
+*   Gallery Layout Stylesheet
+*   url: ghanamade.africa
+*   Frederick Coleman of GhanaMade Corporation January 2018.
+=====================================================================
+
+/* ------------------------------------------------------------------ */
+/* a. General Styles
+/* ------------------------------------------------------------------ */
+
+#wrapper {
+		position: relative;
+		z-index: 1;
+	}
+
+.item.thumb {
+	display: block;
+	position: relative;
+	background: #1a1f2c;
+	background: rgba(255, 255, 255, 0.25);
+	cursor: default;
+}
+
+.item.thumb h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #1a1f2c;
+	background: rgba(18, 21, 29, 0.85);
+	width: 100%;
+	padding: 1em;
+	font-weight: 400;
+	line-height: 1em;
+	z-index: 2;
+}
+
+.item.thumb img {
+	display: block;
+	z-index: 1;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Styles for Screens at least 737px
+/* ------------------------------------------------------------------ */
+
+@media screen and (min-width: 737px) {
+	#wrapper {
+		height: 100%;
+		overflow: hidden;
+		-moz-transition: -moz-filter 0.25s ease-in-out;
+		-webkit-transition: -webkit-filter 0.25s ease-in-out;
+		-ms-transition: -ms-filter 0.25s ease-in-out;
+		transition: filter 0.25s ease-in-out;
+	}
+
+	#wrapper.overlayed {
+		-moz-filter: blur(3px);
+		-webkit-filter: blur(3px);
+		-ms-filter: blur(3px);
+		filter: blur(3px);
+	}
+
+	#main {
+		width: 100%;
+		position: absolute;
+	}
+
+	#reel {
+		position: relative;
+		opacity: 0;
+	}
+
+	#reel .item {
+		display: block;
+		float: left;
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Styles for Screens at most 736px
+/* ------------------------------------------------------------------ */
+
+@media screen and (max-width: 736px) {
+	#wrapper.overlayed {
+		-moz-filter: blur(1px);
+		-webkit-filter: blur(1px);
+		-ms-filter: blur(1px);
+		filter: blur(1px);
+	}
+
+	#main {
+		overflow: hidden;
+	}
+
+	.item {
+		border: 0;
+	}
+
+	.item.thumb {
+		width: 50%;
+		float: left;
+		height: 9em;
+		position: relative;
+	}
+
+	.item.thumb h2 {
+		display: none;
+	}
+
+	.item.thumb a {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.item.thumb img {
+		display: none;
+	}
+}

@@ -246,7 +246,12 @@ ul#nav li.current a { color: #bb091d; }
    padding-bottom: 72px;
    overflow: hidden;
 }
-
+#resume .org-logo {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   border-radius: 100%;
+}
 #resume a, #resume a:visited  { color: #11ABB0; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
